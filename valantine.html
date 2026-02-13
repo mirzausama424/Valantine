@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.s1 {font: 12.0px 'Apple Color Emoji'}
+    span.s2 {font: 12.0px 'Zapf Dingbats'}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1">&lt;title&gt;Forever with You <span class="s1">❤️</span>&lt;/title&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Parisienne&amp;family=Poppins:wght@300;400;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">:root{</p>
+<p class="p1">--bg-start:#3a001f;</p>
+<p class="p1">--bg-end:#0d0007;</p>
+<p class="p1">--pink:#ff4d6d;</p>
+<p class="p1">--soft:#ffb3c1;</p>
+<p class="p1">--card-bg:rgba(255,255,255,.08);</p>
+<p class="p1">--text:#eee;</p>
+<p class="p1">--shadow:0 30px 60px rgba(0,0,0,.6);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body{</p>
+<p class="p1">margin:0;</p>
+<p class="p1">font-family:Poppins,sans-serif;</p>
+<p class="p1">background:radial-gradient(circle at top,var(--bg-start),var(--bg-end));</p>
+<p class="p1">height:100vh;</p>
+<p class="p1">overflow:hidden;</p>
+<p class="p1">color:var(--text);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body.rose-theme{</p>
+<p class="p1">--bg-start:#ffd9e2;</p>
+<p class="p1">--bg-end:#ffb6c1;</p>
+<p class="p1">--pink:#c2214b;</p>
+<p class="p1">--soft:#fff;</p>
+<p class="p1">--card-bg:rgba(255,240,245,.7);</p>
+<p class="p1">--text:#4a1e2b;</p>
+<p class="p1">background:radial-gradient(circle at top,var(--bg-start),var(--bg-end));</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.container{</p>
+<p class="p1">position:absolute;</p>
+<p class="p1">inset:0;</p>
+<p class="p1">display:none;</p>
+<p class="p1">align-items:center;</p>
+<p class="p1">justify-content:center;</p>
+<p class="p1">padding:20px;</p>
+<p class="p1">overflow-y:auto;</p>
+<p class="p1">}</p>
+<p class="p1">.container.active{display:flex;animation:fade .8s}</p>
+<p class="p2"><br></p>
+<p class="p1">@keyframes fade{from{opacity:0;transform:scale(.95)}to{opacity:1}}</p>
+<p class="p2"><br></p>
+<p class="p1">.card{</p>
+<p class="p1">background:var(--card-bg);</p>
+<p class="p1">backdrop-filter:blur(15px);</p>
+<p class="p1">border-radius:30px;</p>
+<p class="p1">padding:40px;</p>
+<p class="p1">max-width:650px;</p>
+<p class="p1">width:100%;</p>
+<p class="p1">text-align:center;</p>
+<p class="p1">box-shadow:var(--shadow);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">h1{</p>
+<p class="p1">font-family:Parisienne,cursive;</p>
+<p class="p1">font-size:3.2rem;</p>
+<p class="p1">color:var(--soft);</p>
+<p class="p1">text-shadow:0 0 20px var(--pink);</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">p{margin:18px 0;font-size:1.1rem}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn{</p>
+<p class="p1">padding:14px 38px;</p>
+<p class="p1">border:none;</p>
+<p class="p1">border-radius:50px;</p>
+<p class="p1">font-weight:600;</p>
+<p class="p1">cursor:pointer;</p>
+<p class="p1">background:linear-gradient(45deg,#ff3366,#ff758f);</p>
+<p class="p1">color:#fff;</p>
+<p class="p1">box-shadow:0 10px 30px rgba(255,77,109,.5);</p>
+<p class="p1">transition:.3s;</p>
+<p class="p1">}</p>
+<p class="p1">.btn:hover{transform:scale(1.08)}</p>
+<p class="p2"><br></p>
+<p class="p1">.gallery{</p>
+<p class="p1">display:grid;</p>
+<p class="p1">grid-template-columns:repeat(auto-fit,minmax(140px,1fr));</p>
+<p class="p1">gap:15px;</p>
+<p class="p1">margin-top:20px;</p>
+<p class="p1">}</p>
+<p class="p1">.gallery img{</p>
+<p class="p1">width:100%;</p>
+<p class="p1">height:160px;</p>
+<p class="p1">object-fit:cover;</p>
+<p class="p1">border-radius:15px;</p>
+<p class="p1">cursor:pointer;</p>
+<p class="p1">transition:.4s;</p>
+<p class="p1">}</p>
+<p class="p1">.gallery img:hover{transform:scale(1.12)}</p>
+<p class="p2"><br></p>
+<p class="p1">.letter{</p>
+<p class="p1">font-family:Dancing Script,cursive;</p>
+<p class="p1">font-size:1.5rem;</p>
+<p class="p1">background:#fff;</p>
+<p class="p1">color:#333;</p>
+<p class="p1">padding:25px;</p>
+<p class="p1">border-radius:15px;</p>
+<p class="p1">line-height:1.6;</p>
+<p class="p1">text-align:left;</p>
+<p class="p1">max-height:60vh;</p>
+<p class="p1">overflow-y:auto;</p>
+<p class="p1">white-space:pre-wrap;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.proposal-btns{</p>
+<p class="p1">display:flex;</p>
+<p class="p1">gap:20px;</p>
+<p class="p1">justify-content:center;</p>
+<p class="p1">margin-top:20px;</p>
+<p class="p1">}</p>
+<p class="p1">#noBtn{background:#444}</p>
+<p class="p2"><br></p>
+<p class="p1">.heart{</p>
+<p class="p1">position:fixed;</p>
+<p class="p1">bottom:-10px;</p>
+<p class="p1">font-size:22px;</p>
+<p class="p1">animation:float 6s linear;</p>
+<p class="p1">}</p>
+<p class="p1">@keyframes float{to{transform:translateY(-110vh);opacity:0}}</p>
+<p class="p2"><br></p>
+<p class="p1">#lightbox{</p>
+<p class="p1">position:fixed;</p>
+<p class="p1">inset:0;</p>
+<p class="p1">background:rgba(0,0,0,.95);</p>
+<p class="p1">display:none;</p>
+<p class="p1">align-items:center;</p>
+<p class="p1">justify-content:center;</p>
+<p class="p1">z-index:999;</p>
+<p class="p1">}</p>
+<p class="p1">#lightbox img{</p>
+<p class="p1">max-width:90%;</p>
+<p class="p1">max-height:80%;</p>
+<p class="p1">border-radius:20px;</p>
+<p class="p1">}</p>
+<p class="p1">#lightbox span{</p>
+<p class="p1">position:absolute;</p>
+<p class="p1">top:20px;</p>
+<p class="p1">right:30px;</p>
+<p class="p1">font-size:30px;</p>
+<p class="p1">cursor:pointer;</p>
+<p class="p1">color:#fff;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.floating-controls{</p>
+<p class="p1">position:fixed;</p>
+<p class="p1">bottom:20px;</p>
+<p class="p1">left:20px;</p>
+<p class="p1">display:flex;</p>
+<p class="p1">gap:14px;</p>
+<p class="p1">background:rgba(0,0,0,.3);</p>
+<p class="p1">padding:12px 18px;</p>
+<p class="p1">border-radius:50px;</p>
+<p class="p1">backdrop-filter:blur(8px);</p>
+<p class="p1">}</p>
+<p class="p1">.control-icon{font-size:26px;cursor:pointer}</p>
+<p class="p2"><br></p>
+<p class="p1">.countdown-box{</p>
+<p class="p1">margin-top:20px;</p>
+<p class="p1">padding:15px;</p>
+<p class="p1">border-radius:30px;</p>
+<p class="p1">border:1px dashed var(--pink);</p>
+<p class="p1">}</p>
+<p class="p1">.timer span{</p>
+<p class="p1">background:rgba(255,77,109,.3);</p>
+<p class="p1">padding:6px 12px;</p>
+<p class="p1">border-radius:20px;</p>
+<p class="p1">margin:0 4px;</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div id="lightbox"&gt;</p>
+<p class="p1">&lt;span onclick="closeLightbox()"&gt;<span class="s2">✖</span>&lt;/span&gt;</p>
+<p class="p1">&lt;img id="lightbox-img"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="floating-controls"&gt;</p>
+<p class="p1">&lt;span id="musicToggle" class="control-icon"&gt;<span class="s1">🎵</span>&lt;/span&gt;</p>
+<p class="p1">&lt;span id="themeToggle" class="control-icon"&gt;<span class="s1">🌙</span>&lt;/span&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;audio id="bgMusic" loop&gt;</p>
+<p class="p1">&lt;source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3"&gt;</p>
+<p class="p1">&lt;/audio&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container active" id="s1"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;Hello My Love <span class="s1">✨</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;p&gt;I made something special… just for you <span class="s1">💕</span>&lt;/p&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s2')"&gt;Begin Our Story <span class="s1">❤️</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container" id="s2"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;Our Memories <span class="s1">📸</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;div class="gallery"&gt;</p>
+<p class="p1">&lt;img src="https://drive.google.com/uc?export=view&amp;id=1FAED16mYs9oafP-wDk8zyV7tuHWTWvK6"&gt;</p>
+<p class="p1">&lt;img src="https://drive.google.com/uc?export=view&amp;id=10BtzfajxYgyuOAgowxDF07AzLUumGOFb"&gt;</p>
+<p class="p1">&lt;img src="https://drive.google.com/uc?export=view&amp;id=1wrhh6-9JhsDnm2lQlkpQJCrACTYuHUMg"&gt;</p>
+<p class="p1">&lt;img src="https://drive.google.com/uc?export=view&amp;id=1oW2w213qsvZStJ_XxMhH2e7ew7dbSB68"&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s3')"&gt;Next <span class="s1">💌</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container" id="s3"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;Our Journey <span class="s1">🕊️</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;div class="countdown-box"&gt;</p>
+<p class="p1">&lt;div class="timer"&gt;</p>
+<p class="p1">&lt;span id="days"&gt;00&lt;/span&gt;d</p>
+<p class="p1">&lt;span id="hours"&gt;00&lt;/span&gt;h</p>
+<p class="p1">&lt;span id="minutes"&gt;00&lt;/span&gt;m</p>
+<p class="p1">&lt;span id="seconds"&gt;00&lt;/span&gt;s</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s4')"&gt;Read My Heart <span class="s1">💗</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container" id="s4"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;For You <span class="s1">💌</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;div id="letter" class="letter"&gt;&lt;/div&gt;</p>
+<p class="p1">&lt;br&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s5')"&gt;One Last Question… <span class="s1">🌹</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container" id="s5"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;Will You Be Mine Forever? <span class="s1">💍</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;div class="proposal-btns"&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s6')"&gt;YES <span class="s1">😍</span>&lt;/button&gt;</p>
+<p class="p1">&lt;button class="btn" id="noBtn" onmouseover="run()"&gt;No <span class="s1">😢</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;div class="container" id="s6"&gt;</p>
+<p class="p1">&lt;div class="card"&gt;</p>
+<p class="p1">&lt;h1&gt;I Knew It <span class="s1">💖</span>&lt;/h1&gt;</p>
+<p class="p1">&lt;p&gt;My heart is yours forever <span class="s1">🥰</span>&lt;/p&gt;</p>
+<p class="p1">&lt;button class="btn" onclick="go('s1')"&gt;Start Over <span class="s1">🔁</span>&lt;/button&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;script&gt;</p>
+<p class="p1">const pages=["s1","s2","s3","s4","s5","s6"];</p>
+<p class="p1">function go(id){</p>
+<p class="p1">document.querySelectorAll(".container").forEach(c=&gt;c.classList.remove("active"));</p>
+<p class="p1">document.getElementById(id).classList.add("active");</p>
+<p class="p1">if(id==="s4") typeLetter();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">function run(){</p>
+<p class="p1">const b=document.getElementById("noBtn");</p>
+<p class="p1">b.style.position="fixed";</p>
+<p class="p1">b.style.left=Math.random()*80+"vw";</p>
+<p class="p1">b.style.top=Math.random()*80+"vh";</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">const letterText=`My Love,</p>
+<p class="p2"><br></p>
+<p class="p1">You are my peace, my happiness, my forever.</p>
+<p class="p1">Every day with you feels like a blessing I never want to take for granted.</p>
+<p class="p2"><br></p>
+<p class="p1">I love you more than words could ever say.</p>
+<p class="p1">Forever yours <span class="s1">❤️</span>`;</p>
+<p class="p2"><br></p>
+<p class="p1">let typed=false;</p>
+<p class="p1">function typeLetter(){</p>
+<p class="p1">if(typed) return;</p>
+<p class="p1">typed=true;</p>
+<p class="p1">let i=0;</p>
+<p class="p1">const el=document.getElementById("letter");</p>
+<p class="p1">el.innerHTML="";</p>
+<p class="p1">(function t(){</p>
+<p class="p1">if(i&lt;letterText.length){</p>
+<p class="p1">el.innerHTML+=letterText[i]==="\n"?"&lt;br&gt;":letterText[i++];</p>
+<p class="p1">setTimeout(t,30);</p>
+<p class="p1">}</p>
+<p class="p1">})();</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">setInterval(()=&gt;{</p>
+<p class="p1">const h=document.createElement("div");</p>
+<p class="p1">h.className="heart";</p>
+<p class="p1">h.innerHTML="<span class="s1">💖</span>";</p>
+<p class="p1">h.style.left=Math.random()*100+"vw";</p>
+<p class="p1">document.body.appendChild(h);</p>
+<p class="p1">setTimeout(()=&gt;h.remove(),6000);</p>
+<p class="p1">},700);</p>
+<p class="p2"><br></p>
+<p class="p1">document.querySelectorAll(".gallery img").forEach(img=&gt;{</p>
+<p class="p1">img.onclick=()=&gt;{</p>
+<p class="p1">document.getElementById("lightbox").style.display="flex";</p>
+<p class="p1">document.getElementById("lightbox-img").src=img.src;</p>
+<p class="p1">}</p>
+<p class="p1">});</p>
+<p class="p1">function closeLightbox(){document.getElementById("lightbox").style.display="none"}</p>
+<p class="p2"><br></p>
+<p class="p1">let music=false;</p>
+<p class="p1">const m=document.getElementById("bgMusic");</p>
+<p class="p1">document.getElementById("musicToggle").onclick=()=&gt;{</p>
+<p class="p1">music?m.pause():m.play();</p>
+<p class="p1">music=!music;</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">document.getElementById("themeToggle").onclick=()=&gt;{</p>
+<p class="p1">document.body.classList.toggle("rose-theme");</p>
+<p class="p1">};</p>
+<p class="p2"><br></p>
+<p class="p1">function countdown(){</p>
+<p class="p1">let d=new Date("Feb 14, 2026").getTime()-Date.now();</p>
+<p class="p1">if(d&lt;0)d+=31536000000;</p>
+<p class="p1">document.getElementById("days").textContent=Math.floor(d/86400000);</p>
+<p class="p1">document.getElementById("hours").textContent=Math.floor(d%86400000/3600000);</p>
+<p class="p1">document.getElementById("minutes").textContent=Math.floor(d%3600000/60000);</p>
+<p class="p1">document.getElementById("seconds").textContent=Math.floor(d%60000/1000);</p>
+<p class="p1">}</p>
+<p class="p1">setInterval(countdown,1000);countdown();</p>
+<p class="p1">&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
